@@ -1,0 +1,43 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "name": "rogue killer",
+  "version": "1.0.10",
+  "description": "Block Website from Google search results",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/js/common.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "rogue killer",
+    "default_popup": "src/manager.html"
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage",
+    "<all_urls>" ,
+    "webRequest",
+    "webRequestBlocking",
+    "notifications"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_start",
+      "js": [
+        "src/js/common.js",
+        "src/js/content_script.js"
+      ]
+    }
+  ]
+}

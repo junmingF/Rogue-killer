@@ -1,0 +1,60 @@
+{
+  "completeBlocked": {
+    "message": "已拉黑 $pattern$",
+    "description": "ブロックしました",
+    "placeholders": {
+      "pattern": {
+        "content": "$1",
+        "exapmle": "exapmle.com"
+      }
+    }
+  },
+  "addBlocklist": {
+    "message": "拉黑 $pattern$",
+    "description": "patternをブロックする",
+    "placeholders": {
+      "pattern": {
+        "content": "$1",
+        "exapmle": "exapmle.com"
+      }
+    }
+  },
+  "cancleBlocked": {
+    "message": "撤消屏蔽 $pattern$",
+    "description": "撤消屏蔽 pattern",
+    "placeholders": {
+      "pattern": {
+        "content": "$1",
+        "exapmle": "exapmle.com"
+      }
+    }
+  },
+  "alreadlyBlocked": {
+    "message": "屏蔽",
+    "description": "ブロック済み"
+  },
+  "blockThisUrl": {
+    "message": "屏蔽",
+    "description": "ブロックする"
+  },
+  "removeUrlFromBlocklist": {
+    "message": "允许",
+    "description": "ブロック解除"
+  },
+  "pws_option_mes": {
+    "message": "网址上使用pws = 0时停止阻止",
+    "description": "stop blocking when using pws=0 at URL"
+  },
+  "save": {
+    "message": "保存",
+    "description": "Save"
+  },
+  "copy": {
+    "message": "选中所有",
+    "description": "Copy all"
+  },
+  "back": {
+    "message": "返回",
+    "description": "Back"
+  }
+}
